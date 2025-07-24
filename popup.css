@@ -75,6 +75,13 @@ body {
   filter: grayscale(0.2);
 }
 
+.icon-disp {
+  border-radius: 25px;
+  border: 2px solid #0f172a;
+  width: 30px;
+  height: 30px;
+}
+
 .logo h1 {
   font-size: 18px;
   font-weight: 600;
@@ -373,7 +380,7 @@ body {
   }
 }
 
-/* Dark mode support */
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --surface: #0f172a;
