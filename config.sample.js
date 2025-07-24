@@ -1,0 +1,5 @@
+const CONFIG = {
+  API_KEY = 'COPY-YOUR-CHATGPT-API-KEY-HERE'
+}
+
+  
