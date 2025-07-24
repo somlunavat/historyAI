@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="logo">
+        <span class="logo-icon">🧠</span>
+        <h1>historyAI</h1>
+      </div>
+      <button id="clearBtn" class="clear-btn" title="Clear History">
+        <span class="clear-icon">🗑️</span>
+      </button>
+    </header>
+
+    <main class="chat-container">
+      <div class="chat-messages" id="chatMessages">
+        <div class="welcome-message">
+          <span class="welcome-icon">👋</span>
+          <p>Ask me anything about your browsing history</p>
+        </div>
+      </div>
+      
+      <div class="chat-input-container">
+        <div class="input-wrapper">
+          <textarea 
+            id="chatInput" 
+            class="chat-input" 
+            placeholder="What did I read about..." 
+            rows="1"
+            maxlength="500"
+          ></textarea>
+          <button id="sendBtn" class="send-btn">
+            <span class="send-icon">↗</span>
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "historyAI",
+  "version": "1.0.0",
+  "description": "darmash shah glaze",
+  
+  "permissions": [
+    "history",
+    "storage", 
+    "scripting",
+    "tabs",
+    "activeTab"
+  ],
+  
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  
+  "content_security_policy": {
+    "service_worker": "script-src 'self' https://cdn.jsdelivr.net; object-src 'self'"
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["config.js", "content-fetcher.js"],
+      "run_at": "document_end"
+    }
+  ],
+  
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "historyAI"
+  },
+  
+  "web_accessible_resources": [
+    {
+      "resources": ["config.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
