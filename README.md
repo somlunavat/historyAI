@@ -11,10 +11,10 @@ bash
 git clone https://github.com/somlunavat/historyAI.git
 ```
 
-2. add API key
+2. add ChatGPT API key
  - go to config.sample.js and rename file to config.js
- - enter your chatgpt api key into the designated location
+ - enter your api key into the designated location
    
 
-3. enjoy :)
+3. enjoy and let me know your feedback :)
 
