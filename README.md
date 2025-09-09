@@ -14,7 +14,9 @@ git clone https://github.com/somlunavat/historyAI.git
 2. add ChatGPT API key
  - go to config.sample.js and rename file to config.js
  - enter your api key into the designated location
+
+3. upload to chrome://extensions/
    
 
-3. enjoy and let me know your feedback :)
+4. enjoy and let me know your feedback :)
 
